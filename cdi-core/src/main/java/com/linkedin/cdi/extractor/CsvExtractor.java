@@ -215,7 +215,7 @@ public class CsvExtractor extends MultistageExtractor<String, String[]> {
     // if Content-Type is provided, but not text/csv, the response can have
     // useful error information
     JsonObject expectedContentType = MultistageProperties.MSTAGE_HTTP_RESPONSE_TYPE.getValidNonblankWithDefault(state);
-    HashSet<String> expectedContentTypeSet = new LinkedHashSet<>(Arrays.asList("text/csv", "application/gzip"));
+    HashSet<String> expectedContentTypeSet = new LinkedHashSet<>(Arrays.asList("text/csv", "application/gzip", "text/plain"));
     if (expectedContentType.has(CONTENT_TYPE_KEY) || expectedContentType.has(CONTENT_TYPE_KEY.toLowerCase())) {
       for (Map.Entry<String, JsonElement> entry: expectedContentType.entrySet()) {
         expectedContentTypeSet.add(entry.getValue().getAsString());
