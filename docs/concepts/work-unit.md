@@ -25,12 +25,7 @@ be n x m work units
 
 In any of above cases, each work unit tracks its own high watermark. 
 
-**Note**: Work units are executed as tasks in runtime. Therefore, tasks and 
-work units are exchangeable concepts.
-
 ## Related
 - [ms.watermark](https://github.com/linkedin/data-integration-library/blob/master/docs/parameters/ms.watermark.md)
 - [ms.grace.period.days](https://github.com/linkedin/data-integration-library/blob/master/docs/parameters/ms.grace.period.days.md)
 - [ms.abstinent.period.days](https://github.com/linkedin/data-integration-library/blob/master/docs/parameters/ms.abstinent.period.days.md)
-
-[Back to Summary](summary.md#work-unit)

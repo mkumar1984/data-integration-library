@@ -1,8 +1,8 @@
 # ms.session.key.field
 
 **Tags**:
-[source](categories.md#source-properties),
-[pagination](categories.md#pagination-properties)
+[source](https://github.com/linkedin/data-integration-library/blob/master/docs/parameters/categories.md#source-properties),
+[pagination](https://github.com/linkedin/data-integration-library/blob/master/docs/parameters/categories.md#pagination-properties)
 
 **Type**: string
 
@@ -12,8 +12,8 @@
 
 **Related**:
 - [key concept: pagination](https://github.com/linkedin/data-integration-library/blob/master/docs/concepts/pagination.md)
-- [ms.pagination](ms.pagination.md)
-- [ms.total.count.field](ms.total.count.field.md)
+- [ms.pagination](https://github.com/linkedin/data-integration-library/blob/master/docs/parameters/ms.pagination.md)
+- [ms.total.count.field](https://github.com/linkedin/data-integration-library/blob/master/docs/parameters/ms.total.count.field.md)
 
 ## Description
 

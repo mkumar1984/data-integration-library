@@ -14,9 +14,9 @@
 - [key concept: variables](https://github.com/linkedin/data-integration-library/blob/master/docs/concepts/variables.md)
 - [key concept: watermark](https://github.com/linkedin/data-integration-library/blob/master/docs/concepts/watermark.md)
 - [key concept: pagination](https://github.com/linkedin/data-integration-library/blob/master/docs/concepts/pagination.md)
-- [job property: ms.session.key.field](ms.session.key.field.md)
-- [job property: ms.watermark](ms.watermark.md)
-- [job property: ms.pagination](ms.pagination.md)
+- [job property: ms.session.key.field](https://github.com/linkedin/data-integration-library/blob/master/docs/parameters/ms.session.key.field.md)
+- [job property: ms.watermark](https://github.com/linkedin/data-integration-library/blob/master/docs/parameters/ms.watermark.md)
+- [job property: ms.pagination](https://github.com/linkedin/data-integration-library/blob/master/docs/parameters/ms.pagination.md)
 
 ## Description 
 
