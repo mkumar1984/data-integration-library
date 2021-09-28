@@ -11,7 +11,7 @@
 
 - [key concept: watermark](https://github.com/linkedin/data-integration-library/blob/master/docs/concepts/watermark.md)
 - [key concept: work-unit](https://github.com/linkedin/data-integration-library/blob/master/docs/concepts/work-unit.md)
-- [Property: ms.grace.period.days](https://github.com/linkedin/data-integration-library/blob/master/docs/parameters/ms.grace.period.days.md)
+- [Property: ms.grace.period.days](ms.grace.period.days.md)
 - [How to: abstinent period](https://github.com/linkedin/data-integration-library/blob/master/docs/how-to/abstinent-period.md)
 - [How to: grace period](https://github.com/linkedin/data-integration-library/blob/master/docs/how-to/grace-period.md)
 

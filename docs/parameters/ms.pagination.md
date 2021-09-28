@@ -11,8 +11,8 @@
 
 **Related**:
 - [key concept: pagination](https://github.com/linkedin/data-integration-library/blob/master/docs/concepts/pagination.md)
-- [ms.session.key.field](https://github.com/linkedin/data-integration-library/blob/master/docs/parameters/ms.session.key.field.md)
-- [ms.total.count.field](https://github.com/linkedin/data-integration-library/blob/master/docs/parameters/ms.total.count.field.md)
+- [ms.session.key.field](ms.session.key.field.md)
+- [ms.total.count.field](ms.total.count.field.md)
 
 ## Description
 
