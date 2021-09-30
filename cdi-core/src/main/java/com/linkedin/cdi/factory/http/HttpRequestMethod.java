@@ -27,8 +27,6 @@ import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.message.BasicNameValuePair;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 
 /**
@@ -228,9 +226,7 @@ public enum HttpRequestMethod {
     try {
       URIBuilder builder = new URIBuilder(new URI(uri));
       for (Map.Entry<String, JsonElement> entry : parameters.entrySet()) {
-        if (!entry.getKey().matches("tmp.*")) {
-          builder.addParameter(entry.getKey(), entry.getValue().getAsString());
-        }
+        builder.addParameter(entry.getKey(), entry.getValue().getAsString());
       }
       return builder.build().toString();
     } catch (Exception e) {
