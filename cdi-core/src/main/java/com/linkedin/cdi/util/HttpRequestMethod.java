@@ -13,7 +13,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.tuple.Pair;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
@@ -26,6 +25,8 @@ import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.message.BasicNameValuePair;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 /**
@@ -51,7 +52,6 @@ import org.apache.http.message.BasicNameValuePair;
  * @author chrli
  */
 
-@Slf4j
 public enum HttpRequestMethod {
   GET("GET") {
     @Override
@@ -130,6 +130,7 @@ public enum HttpRequestMethod {
     }
   };
 
+  private static final Logger LOG = LoggerFactory.getLogger(HttpRequestMethod.class);
   private final String name;
 
   HttpRequestMethod(String name) {
@@ -176,13 +177,13 @@ public enum HttpRequestMethod {
       if (!replaced.getLeft().equals(entry.getValue())) {
         parametersCopy = JsonUtils.deepCopy(replaced.getRight()).getAsJsonObject();
         headersCopy.put(entry.getKey(), replaced.getLeft());
-        log.info("Substituted header string: {} = {}", entry.getKey(), replaced.getLeft());
+        LOG.info("Substituted header string: {} = {}", entry.getKey(), replaced.getLeft());
       } else {
         headersCopy.put(entry.getKey(), entry.getValue());
       }
     }
 
-    log.info("Final parameters for HttpRequest: {}", parametersCopy.toString());
+    LOG.info("Final parameters for HttpRequest: {}", parametersCopy.toString());
     if (headersCopy.containsKey("Content-Type")
         && headersCopy.get("Content-Type").equals("application/x-www-form-urlencoded")) {
       request = getHttpRequestContentUrlEncoded(uriTemplate, parametersCopy);
